@@ -131,6 +131,7 @@ button {
 
 .cancel:hover {
   color: black;
+  background-color: rgba(240, 111, 126, 0.3);
 }
 .option img {
   width: 95%;
