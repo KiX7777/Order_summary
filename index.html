@@ -40,6 +40,10 @@
   Proceed to Payment
   Cancel Order -->
     <div class="container flex">
+      <div class="popup hidden">
+        POPUP
+        <button class="close" onclick="closep()">X</button>
+      </div>
       <div class="slika">
         <img src="/images/illustration-hero.svg" alt="" class="image" />
       </div>
@@ -61,7 +65,7 @@
               <p class="price">$59.99/year</p>
             </div>
           </div>
-          <a href="#">Change</a>
+          <a href="#" class="change" onclick="openpopup()">Change</a>
         </div>
         <div class="buttons flex column">
           <button class="payment">Proceed to Payment</button>
