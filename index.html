@@ -41,8 +41,40 @@
   Cancel Order -->
     <div class="container flex">
       <div class="popup hidden">
-        POPUP
         <button class="close" onclick="closep()">X</button>
+        <div class="option flex pop">
+          <div class="annual flex">
+            <div class="optionleft">
+              <img src="/images/icon-music.svg" alt="" />
+            </div>
+            <div class="optionright flex column">
+              <p class="plan">Weekly Plan</p>
+              <p class="price">$9.99/week</p>
+            </div>
+          </div>
+        </div>
+        <div class="option flex pop">
+          <div class="annual flex">
+            <div class="optionleft">
+              <img src="/images/icon-music.svg" alt="" />
+            </div>
+            <div class="optionright flex column">
+              <p class="plan">Monthly Plan</p>
+              <p class="price">$29.99/month</p>
+            </div>
+          </div>
+        </div>
+        <div class="option flex pop active">
+          <div class="annual flex">
+            <div class="optionleft">
+              <img src="/images/icon-music.svg" alt="" />
+            </div>
+            <div class="optionright flex column">
+              <p class="plan">Annual Plan</p>
+              <p class="price">$59.99/year</p>
+            </div>
+          </div>
+        </div>
       </div>
       <div class="slika">
         <img src="/images/illustration-hero.svg" alt="" class="image" />
@@ -61,8 +93,8 @@
               <img src="/images/icon-music.svg" alt="" />
             </div>
             <div class="optionright flex column">
-              <p class="plan">Annual Plan</p>
-              <p class="price">$59.99/year</p>
+              <p class="plan" id="selectedPlan">Annual Plan</p>
+              <p class="price" id="selectedPrice">$59.99/year</p>
             </div>
           </div>
           <a href="#" class="change" onclick="openpopup()">Change</a>
