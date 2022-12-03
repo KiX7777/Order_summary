@@ -36,25 +36,15 @@ const selectedPrice = document.querySelector('#selectedPrice');
 popup.addEventListener(
   'click',
   function (e) {
-    // option.classList.remove('active');
-    pop.forEach((opcija) => {
-      // opcija.classList.remove('active');
-      opcija.classList.remove('active');
-    });
-    console.log(e.target);
-    if (e.target.classList.contains('pop')) {
-      selectedPlan.textContent = 'mmm';
-      e.target.classList.toggle('active');
-    }
+    pop.forEach((el) => el.classList.remove('active'));
   },
-  { capture: false }
+
+  true
 );
 
-// pop.forEach((tab) => {
-//   tab.addEventListener('click', function (e) {
-//     e.target.classList.toggle('active');
-//     tab.classList.remove('active');
-//   });
-//   popup.classList.remove('active');
-//   e.target.classList.toggle('active');
-// });
+pop.forEach((tab) => {
+  tab.addEventListener('click', function (e) {
+    tab.classList.toggle('active');
+  });
+  popup.classList.remove('active');
+});
