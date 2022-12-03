@@ -1,0 +1,151 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+html {
+  font-size: 62.5%;
+  font-family: 'Red Hat Display', sans-serif;
+}
+
+body {
+  background-image: url('/images/pattern-background-desktop.svg');
+  background-size: cover;
+}
+
+.container {
+  margin: 3rem auto;
+  max-width: 350px;
+  background-color: #fff;
+  border: 1px solid black;
+  flex-direction: column;
+  height: 85vh;
+  border-radius: 2rem;
+  overflow: hidden;
+}
+
+.slika {
+  overflow: hidden;
+}
+.image {
+  width: 100%;
+  border-radius: inherit;
+
+  object-fit: fill;
+}
+
+.flex {
+  display: flex;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.option {
+  background-color: #f8f9fe;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.4rem 2rem;
+}
+
+.bottom {
+  justify-content: space-between;
+  flex: 1;
+  /* gap: rem; */
+  padding: 2rem 3.2rem;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+}
+.ordersum {
+  font-size: 2.4rem;
+  font-weight: 900;
+  color: #1f2f56;
+}
+.txt {
+  font-size: 1.2rem;
+  color: hsl(224, 23%, 55%);
+  /* padding: 0 5rem; */
+  padding: 0.5rem 1.8rem;
+
+  text-align: center;
+  line-height: 1.5;
+}
+
+.summary {
+  gap: 1rem;
+  align-items: center;
+}
+.annual {
+  gap: 2rem;
+  align-items: center;
+}
+.optionright {
+  gap: 0.8rem;
+  font-size: 1.2rem;
+  align-items: center;
+}
+
+.plan {
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+.price {
+  color: hsl(224, 23%, 55%);
+}
+button {
+  width: 80%;
+  padding: 1.4rem;
+  border-radius: 1rem;
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  transition: 0.3s all;
+  cursor: pointer;
+}
+.buttons {
+  align-items: center;
+  gap: 1rem;
+  border: none;
+  flex-basis: 11.2rem;
+  gap: 1.5rem;
+  /* font-size: 1.2rem; */
+}
+
+.payment {
+  background-color: rgb(56, 41, 224);
+  color: #f8f9fe;
+  box-shadow: 0px 15px 24px -8px rgba(56, 41, 224, 0.5);
+}
+.cancel {
+  color: hsl(224, 23%, 55%);
+}
+
+.payment:hover {
+  background-color: #766cf1;
+}
+
+.cancel:hover {
+  color: black;
+}
+.option img {
+  width: 95%;
+}
+
+a:link {
+  text-decoration: none;
+  color: black;
+  font-size: 1rem;
+  transition: 0.3s ease all;
+}
+a:visited {
+  color: black;
+}
+a:hover {
+  color: #766cf1;
+  font-size: 1.1rem;
+}
