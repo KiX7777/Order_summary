@@ -56,3 +56,13 @@ pop.forEach((tab) => {
 //     plan.classList.add('selectedPlan');
 //   })
 // );
+
+const payment = document.querySelector('.payment');
+
+const pay = function () {
+  if (confirm('Do you want to pay for your order?')) {
+    alert('Payment and order successful!');
+  } else {
+    return;
+  }
+};
