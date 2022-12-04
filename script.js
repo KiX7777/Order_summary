@@ -30,21 +30,29 @@ const pop = document.querySelectorAll('.pop');
 //   );
 // });
 
-const selectedPlan = document.querySelector('#selectedPlan');
-const selectedPrice = document.querySelector('#selectedPrice');
-
-popup.addEventListener(
-  'click',
-  function (e) {
-    pop.forEach((el) => el.classList.remove('active'));
-  },
-
-  true
-);
+const Plan = document.querySelectorAll('.plan');
+const Price = document.querySelectorAll('.price');
+const selectedPlan = document.querySelector('.selectedPlan');
+const selectedPrice = document.querySelector('.selectedPrice');
 
 pop.forEach((tab) => {
   tab.addEventListener('click', function (e) {
+    pop.forEach((el) => {
+      el.classList.remove('active');
+    });
+    // selectedPlan.textContent = activeOption.;
     tab.classList.toggle('active');
+    const activeOption = document.querySelector('.active');
+    const activePlan = activeOption.querySelector('.plan');
+    const activePrice = activeOption.querySelector('.price');
+    selectedPlan.textContent = activePlan.textContent;
+    selectedPrice.textContent = activePrice.textContent;
   });
-  popup.classList.remove('active');
 });
+
+// Plan.forEach((plan) =>
+//   plan.addEventListener('click', function (e) {
+//     console.log(e.target);
+//     plan.classList.add('selectedPlan');
+//   })
+// );

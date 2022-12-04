@@ -154,13 +154,14 @@ a:hover {
 }
 
 .popup {
-  width: 100%;
+  width: 90%;
   max-height: 20rem;
   background-color: #d6e1ff;
   border: 2px solid black;
   border-radius: 1rem;
   position: absolute;
   top: 40%;
+  left: 5%;
   /* transform: translate(0, -20%); */
   transition: 0.3s all ease;
   /* position: relative; */
@@ -208,7 +209,7 @@ a:hover {
   width: 2rem;
   right: 2%;
   top: -5%;
-  color: rgb(177, 8, 8);
+  color: #1f2f56;
 }
 
 .scale-out-center {
@@ -264,7 +265,6 @@ a:hover {
   .close {
     width: 2rem;
     right: 2%;
-    color: rgb(177, 8, 8);
   }
 }
 .pop {
@@ -275,7 +275,9 @@ a:hover {
   border-radius: 0.5rem;
   transition: 0.3s all;
 }
-
+.pop:not(.active):hover {
+  background-color: #d6e1ff;
+}
 .active {
   background-color: #75ecca;
 }
